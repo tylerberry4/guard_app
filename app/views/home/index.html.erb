@@ -1,0 +1,16 @@
+
+
+<% if @html_array.empty? %>
+
+  <h1> Sorry no upcoming events at the moment, check back later</h1>
+
+<% else %>
+
+  <% @html_array.each do |html| %>
+    <div class="upcoming-event"> <%= CGI.unescapeHTML(html).html_safe %> <div>
+  <% end %>
+
+<%end%>
+
+
+
