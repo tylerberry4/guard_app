@@ -7,11 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <div class="container">
+    <header>
+      <%=link_to("home", "/")%>
+      <br>
+      <%=link_to("History", history_path)%>
+      <br>
+      <%=link_to("Photos", photos_path)%>
+
+    </header>
+    <p class="notice"><%= notice %></p>
 
 
-<%= yield %>
-
+    <%= yield %>
+  </div>
 </body>
 </html>

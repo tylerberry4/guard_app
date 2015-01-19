@@ -22,6 +22,8 @@ end
 
 gem 'jquery-rails'
 
+gem "twitter-bootstrap-rails"
+
 # for user authentication
 gem 'devise'
 

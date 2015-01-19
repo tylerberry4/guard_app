@@ -8,6 +8,14 @@ class HomeController < ApplicationController
     @html_array
   end
 
+  def history
+
+  end
+
+  def photos
+
+  end
+
 
   protected
 
